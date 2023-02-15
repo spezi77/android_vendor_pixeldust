@@ -17,34 +17,4 @@
 # PixelDust Overlays
 PRODUCT_PACKAGES += \
     PixelDustConfigOverlay \
-
-PRODUCT_PACKAGES += \
-    PixelSetupWizardOverlayPixelDust \
     SettingsGoogleOverlayPixelDust
-
-# Google Overlays
-PRODUCT_PACKAGES += \
-    CaptivePortalLoginOverlay \
-    CellBroadcastReceiverOverlay \
-    CellBroadcastServiceOverlay \
-    DMServiceOverlay \
-    GooglePermissionControllerOverlay \
-    GoogleWebViewOverlay \
-    ManagedProvisioningPixelOverlay \
-    MediaProviderOverlay \
-    NetworkStackOverlay \
-    NetworkStackGoogleOverlay \
-    PixelConfigOverlay2018 \
-    PixelConfigOverlay2019 \
-    PixelConfigOverlay2019Midyear \
-    PixelConfigOverlay2021 \
-    PixelConfigOverlayCommon \
-    PixelTetheringOverlay
-
-ifeq ($(WITH_GOOGLE_APEX),true)
-PRODUCT_PACKAGES += \
-    GoogleConfigOverlayApex
-else
-PRODUCT_PACKAGES += \
-    GoogleConfigOverlay
-endif
